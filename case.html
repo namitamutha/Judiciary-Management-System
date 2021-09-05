@@ -1,0 +1,95 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="navigation.css" media="screen"/>
+</head>
+<body>
+<div align="right">
+<button onclick="window.location='welcome.html';"><h2 align="right">LOG OUT</h2></button>
+</div>
+<div class="sidenav">
+  <a href="case.html">Enter case details</a>
+  <a href="hearing_1.php">Enter Hearing details</a>
+  <a href="slots.php">Book a slot</a>
+  <a href="particular_date.html">View Hearings of a date</a>
+  <a href="pending.php">View pending cases</a>
+  <a href="completed.php">View completed cases</a>
+</div>
+<form method="post"  action="case.php">
+<div class="content">
+<h2><center>ADD A NEW CASE</h2>
+<p>
+<label>Judge
+<input type="text" name="judge" required>
+</label>
+</p>
+
+<p>
+<label>Prosecutor
+<input type="text" name="prosecutor" required>
+</label>
+</p>
+
+<fieldset>
+<legend>Crime</legend>
+<p>
+<label>Crime Date
+<input type="date" name="crimeDate" required>
+</label>
+</p>
+
+<p>
+<label>Location
+<input type="text" name="location" required>
+</label>
+</p>
+
+<p>
+<label>Type
+<input type="text" name="type" required>
+</label>
+</p>
+</fieldset>
+
+<fieldset>
+<legend>Defendant</legend>
+<p>
+<label>Name
+<input type="text" name="defendantName" required>
+</label>
+</p>
+
+<p>
+<label>Address
+<textarea name="address" maxlength="500"></textarea>
+</label>
+</p>
+</fieldset>
+
+<fieldset>
+<legend>Arrest</legend>
+<p>
+<label>Officer
+<input type="text" name="officer" required>
+</label>
+</p>
+
+<p>
+<label>Date
+<input type="date" name="arrestDate" required>
+</label>
+</p>
+</fieldset>
+
+Select :
+<input type="radio" name="status" value="completed"> Completed
+<input type="radio" name="status" value="pending"> Pending<br>
+
+
+<p>
+<input type="submit" value="Submit">
+</p>
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login for Judisciary Database System</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	  <div class="header">
+	  <h2>Account Login</h2>
+	  </div>
+
+	  <form method="post" action="index.php">
+		  <div >
+				<input type="radio" name="person" value="registrar" checked>Registrar
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				<input type="radio" name="person" value="lawyer">Lawyer
+				&nbsp;
+				&nbsp;
+				&nbsp;
+				<input type="radio" name="person" value="judge">Judge <br>
+		  </div>
+		  <div class="input-group">
+				<input type="text" class="textbox" id="username" name="username" placeholder="Username" required />
+		  </div>
+		  <div class="input-group">
+				<input type="password" class="password" id="password" name="password" placeholder="Password" required />
+		  </div>
+		  <div class="input-group">
+				<input type="submit" class="btn" value="Login" name="submit" id="submit" />
+		  </div>
+	  
+	  </form>
+
+</body>
+</html>

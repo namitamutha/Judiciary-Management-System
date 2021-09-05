@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color :#fada5e;
+  padding-right: 20px;
+
+}
+
+/* Style the side navigation */
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111e6c;
+  overflow-x: hidden;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: white;
+  padding: 40px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #3fe0d0;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  margin-left: 320px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
